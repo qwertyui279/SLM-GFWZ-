@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LittleSkin - Minecraft皮肤站</title>
+    <style>
+/* === 基础样式 === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+/* 替换方案1中的body::before部分 */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(45deg, #78b159 25%, transparent 25%),
+        linear-gradient(-45deg, #78b159 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #78b159 75%),
+        linear-gradient(-45deg, transparent 75%, #78b159 75%);
+    background-size: 32px 32px;
+    background-color: #5a8f3d;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* === 导航栏 === */
+.navbar {
+    background-color: #4285f4;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+/* === 主容器 === */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+/* === 横幅区域 === */
+.banner {
+    background: linear-gradient(135deg, #4285f4, #34a853);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.desktop-btn:hover {
+    background-color: #f1f8fe;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+/* 电脑版按钮样式 */
+.desktop-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    border: 2px solid #4285f4;
+    border-radius: 20px;
+    color: #4285f4;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+/* === 功能卡片 === */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: #4285f4;
+    margin-bottom: 1rem;
+}
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        /* === 响应式设计 === */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            
+            .nav-links {
+                margin-top: 1rem;
+            }
+            
+            .banner h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<a href="index.html" class="desktop-btn">转移到手机版</a>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <a href="asd.html" class="logo">SLM官方服务器网站</a>
+        <div class="nav-links">
+            <a href="zip.html">首页</a>
+            <a href="dfg.html">上传建议</a>
+            <a href="fgh.html">上传皮肤</a>
+            <a href="ghj.html">服务器基本信息</a>
+            <a href="hjk.html">服务器Ip</a>
+        </div>
+    </nav>
+    
+    <!-- 主内容区 -->
+    <div class="container">
+        <!-- 横幅 -->
+        <section class="banner">
+            <h1>SLM服务器</h1>
+            <p土豆服，只插件供应</p>
+        </section>
+        
+        <!-- 功能卡片 -->
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">✔</div>
+                <h3>插件供应</h3>
+                <p>由purpur核心支持插件<br>争取给家一个流畅的服务器</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">✔</div>
+                <h3>公益免费</h3>
+                <p>由wemc支持服务器运转<br>如服务没有开，那有%90的原因是因为我懒，没签到</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">✔</div>
+                <h3>稳定可靠</h3>
+                <p>只要我不懒</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 页脚 -->
+    <footer class="footer">
+       </p>没力</p>
+    </footer>
+</body>
+</html>
